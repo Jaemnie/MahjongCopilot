@@ -42,7 +42,7 @@ class LanStr:
     UPSTREAM_PROXY = "Upstream Proxy"
     CLIENT_SIZE = "Client Size"
     MAJSOUL_URL = "Majsoul URL"
-    ENABLE_CHROME_EXT = "Enable Chrome Extensioins"
+    ENABLE_CHROME_EXT = "Enable Chrome Extensions"
     LANGUAGE = "Display Language"
     CLIENT_INJECT_PROXY = "Auto Proxy Majsoul Windows Client"
     MODEL_TYPE = "AI Model Type"
@@ -135,132 +135,130 @@ class LanStr:
     
 
 class LanStrZHS(LanStr):
-    """ String constants for Chinese Simplified"""
-    LANGUAGE_NAME = '简体中文'
+    """ String constants for Korean (Overwritten from Chinese Simplified)"""
+    LANGUAGE_NAME = '한국어'
     
     # GUI
-    APP_TITLE = '麻将 Copilot'
-    START_BROWSER = "启动网页客户端"
-    WEB_OVERLAY = "网页 HUD"
-    AUTOPLAY = "自动打牌"
-    AUTO_JOIN_GAME = "自动加入"
-    AUTO_JOIN_TIMER = "自动加入定时停止"
-    OPEN_LOG_FILE = "打开日志文件"
-    SETTINGS = "设置"
-    HELP = "帮助"
-    LOADING = "加载中..."
-    EXIT = "退出"
-    EIXT_CONFIRM = "确定退出程序?"
-    AI_OUTPUT = 'AI 提示'
-    GAME_INFO = '游戏信息'    
-    ON = "开"
-    OFF = "关"
+    APP_TITLE = '마작 Copilot'
+    START_BROWSER = "웹 클라이언트 시작"
+    WEB_OVERLAY = "오버레이"
+    AUTOPLAY = "자동 플레이"
+    AUTO_JOIN_GAME = "자동 참가"
+    AUTO_JOIN_TIMER = "자동 참가 타이머"
+    OPEN_LOG_FILE = "로그 파일 열기"
+    SETTINGS = "설정"
+    HELP = "도움말"
+    LOADING = "로딩 중..."
+    EXIT = "종료"
+    EIXT_CONFIRM = "정말 종료하시겠습니까?"
+    AI_OUTPUT = 'AI 안내'
+    GAME_INFO = '게임 정보'    
+    ON = "켜짐"
+    OFF = "꺼짐"
     
     # help
-    DOWNLOAD_UPDATE = "下载更新"
-    START_UPDATE = "开始更新"
-    UPDATE_AVAILABLE = "有新的更新可用"    
-    CHECK_FOR_UPDATE = "检查更新"
-    CHECKING_UPDATE = "正在检查更新..."
-    NO_UPDATE_FOUND = "未发现更新"
-    UNZIPPING = "解压中..."
-    DOWNLOADING = "下载中..."
-    UPDATE_PREPARED = "更新已准备好。点击按钮更新并重启。"    
+    DOWNLOAD_UPDATE = "업데이트 다운로드"
+    START_UPDATE = "업데이트 및 재시작"
+    CHECK_FOR_UPDATE = "업데이트 확인"
+    CHECKING_UPDATE = "새로운 업데이트 확인 중..."
+    UPDATE_AVAILABLE = "새로운 업데이트가 있습니다"
+    NO_UPDATE_FOUND = "새로운 업데이트가 없습니다"
+    DOWNLOADING = "다운로드 중..."
+    UNZIPPING = "압축 해제 중..."
+    UPDATE_PREPARED = "업데이트 준비 완료. 버튼을 클릭하여 업데이트하고 재시작하세요."
     
     # Settings
-    SAVE = "保存"
-    CANCEL = "取消"
-    SETTINGS_TIPS = "MITM 代理相关设置项重启后生效"
-    MITM_PORT = "MITM 服务端口"
-    UPSTREAM_PROXY = "上游代理"
-    CLIENT_SIZE = "客户端大小"
-    MAJSOUL_URL = "雀魂网址"
-    ENABLE_CHROME_EXT = "启用浏览器插件"
-    LANGUAGE = "显示语言"
-    CLIENT_INJECT_PROXY = "自动代理雀魂 Windows 客户端" 
-    MODEL_TYPE = "AI 模型类型"
-    AI_MODEL_FILE = "本地模型文件(四麻)"
-    AI_MODEL_FILE_3P = "本地模型文件(三麻)"
-    AKAGI_OT_URL = "AkagiOT 服务器地址"
-    AKAGI_OT_APIKEY = "AkagiOT API Key"
-    MJAPI_URL = "MJAPI 服务器地址"
-    MJAPI_USER = "MJAPI 用户名"
-    MJAPI_USAGE = "API 用量"
-    MJAPI_SECRET = "MJAPI 密钥"
-    MJAPI_MODEL_SELECT = "MJAPI 模型选择"
-    LOGIN_TO_REFRESH = "登录后刷新"
-    AUTO_LAUNCH_BROWSER = "自动启动浏览器"
-    MITM_PORT_ERROR_PROMPT = "错误的 MITM 服务端口(必须是1000~65535)"
+    SAVE = "저장"
+    CANCEL = "취소"
+    SETTINGS_TIPS = "MITM 관련 설정을 적용하려면 재시작이 필요합니다"
+    MITM_PORT = "MITM 서버 포트"
+    UPSTREAM_PROXY = "업스트림 프록시"
+    CLIENT_SIZE = "클라이언트 크기"
+    MAJSOUL_URL = "마주소 URL"
+    ENABLE_CHROME_EXT = "크롬 확장 기능 활성화"
+    LANGUAGE = "표시 언어"
+    CLIENT_INJECT_PROXY = "마주소 Windows 클라이언트 자동 프록시"
+    MODEL_TYPE = "AI 모델 유형"
+    AI_MODEL_FILE = "로컬 모델 파일 (4인)"
+    AI_MODEL_FILE_3P = "로컬 모델 파일 (3인)"
+    AKAGI_OT_URL = "AkagiOT 서버 URL"
+    AKAGI_OT_APIKEY = "AkagiOT API 키"
+    MJAPI_URL = "MJAPI 서버 URL"
+    MJAPI_USER = "MJAPI 사용자"
+    MJAPI_USAGE = "API 사용량"
+    MJAPI_SECRET = "MJAPI 비밀키"
+    MJAPI_MODEL_SELECT = "MJAPI 모델 선택"
+    LOGIN_TO_REFRESH = "로그인 후 새로고침"
+    AUTO_LAUNCH_BROWSER = "브라우저 자동 시작"
+    MITM_PORT_ERROR_PROMPT = "잘못된 MITM 포트 (1000~65535 사이여야 합니다)"
     # autoplay
-    AUTO_PLAY_SETTINGS = "自动打牌设置"
-    AUTO_IDLE_MOVE = "鼠标空闲移动"
-    DRAG_DAHAI = "鼠标拖拽出牌"
-    RANDOM_CHOICE = "AI 选项随机化(去重)"
-    REPLY_EMOJI_CHANCE = "回复表情概率"
-    
-    RANDOM_DELAY_RANGE = "基础延迟随机范围(秒)"
-    GAME_LEVELS = ["铜之间", "银之间", "金之间", "玉之间", "王座之间"]
-    GAME_MODES = ["四人东","四人南","三人东","三人南"]
-    MOUSE_RANDOM_MOVE = "鼠标移动随机化"
+    AUTO_PLAY_SETTINGS = "자동 플레이 설정"
+    AUTO_IDLE_MOVE = "마우스 유휴 이동"
+    DRAG_DAHAI = "마우스 드래그 다하이"
+    RANDOM_CHOICE = "AI 선택 랜덤화"
+    REPLY_EMOJI_CHANCE = "이모지 응답 확률"
+    RANDOM_DELAY_RANGE = "기본 지연 범위 (초)"    
+    GAME_LEVELS = ["동", "은", "금", "옥", "왕좌"]
+    GAME_MODES = ["4인 동","4인 남","3인 동","3인 남"]
+    MOUSE_RANDOM_MOVE = "마우스 이동 랜덤화"
     
     # Status
-    MAIN_THREAD  = "主程序"
-    MITM_SERVICE = "MITM 服务"
-    BROWSER = "浏览器"
-    PROXY_CLIENT = "代理客户端"
-    GAME_RUNNING = "对局进行中"
-    GAME_ERROR = "对局发生错误!"    
-    SYNCING = "同步中…"
-    CALCULATING = "计算中…"
-    READY_FOR_GAME = "等待游戏"
-    GAME_STARTING = "准备开始"
+    MAIN_THREAD  = "메인 스레드"
+    MITM_SERVICE = "MITM 서비스"
+    BROWSER = "브라우저"
+    PROXY_CLIENT = "프록시 클라이언트"
+    GAME_RUNNING = "게임 실행 중"
+    GAME_ERROR = "게임 오류!"
+    SYNCING = "동기화 중..."
+    CALCULATING = "계산 중..."
+    READY_FOR_GAME = "준비 완료"
+    GAME_STARTING = "게임 시작 중"
     KYOKU = "局"
-    HONBA = "本场"
-    MODEL = "模型"
-    MODEL_NOT_LOADED = "模型未加载"
-    MODEL_LOADING = "正在加载模型..."
-    MAIN_MENU = "游戏主菜单"
-    GAME_ENDING = "游戏结束"
-    GAME_NOT_RUNNING = "未启动"
-    #error
-    LOCAL_MODEL_ERROR = "本地模型加载错误!"
-    MITM_CERT_NOT_INSTALLED = "以管理员运行或手动安装 MITM 证书"
-    MITM_SERVER_ERROR = "MITM 服务错误!"
-    MAIN_THREAD_ERROR = "主进程发生错误!"
-    MODEL_NOT_SUPPORT_MODE_ERROR = "模型不支持游戏模式"
-    CONNECTION_ERROR = "网络连接错误"
-    BROWSER_ZOOM_OFF = r"请将浏览器缩放设置成 100% 以正常运行!"
-    CHECK_ZOOM = "浏览器缩放错误!"
-    
+    HONBA = "本場"
+    MODEL = "모델"
+    MODEL_NOT_LOADED = "모델이 로드되지 않음"
+    MODEL_LOADING = "모델 로딩 중..."
+    MAIN_MENU = "메인 메뉴"
+    GAME_ENDING = "게임 종료 중"
+    GAME_NOT_RUNNING = "실행되지 않음"
+    #errors
+    LOCAL_MODEL_ERROR = "로컬 모델 로딩 오류!"
+    MITM_SERVER_ERROR = "MITM 서비스 오류!"
+    MITM_CERT_NOT_INSTALLED = "관리자 권한으로 실행하거나 MITM 인증서를 수동으로 설치하세요."
+    MAIN_THREAD_ERROR = "메인 스레드 오류!"
+    MODEL_NOT_SUPPORT_MODE_ERROR = "모델이 게임 모드를 지원하지 않음"
+    CONNECTION_ERROR = "네트워크 연결 오류"
+    BROWSER_ZOOM_OFF = r"브라우저 줌 레벨을 100%로 설정하세요!"
+    CHECK_ZOOM = "브라우저 줌 확인!"
     # Reaction/Actions
-    PASS = "跳过"
-    DISCARD = "切"
-    CHI = "吃"
-    PON = "碰"
-    KAN = "杠"
-    KAKAN = "加杠"
-    DAIMINKAN = "大明杠"
-    ANKAN = "暗杠"
-    RIICHI = "立直"
-    AGARI = "和牌"
-    TSUMO = "自摸"
-    RON = "荣和"
-    RYUKYOKU = "流局"
-    NUKIDORA = "拔北"
-    OPTIONS_TITLE = "候选项:"    
+    PASS = "건너뛰기"
+    DISCARD = "버리기"
+    CHI = "치"
+    PON = "폰"
+    KAN = "칸"
+    KAKAN = "카칸"
+    DAIMINKAN = "다이밍칸"
+    ANKAN = "안칸"
+    RIICHI = "리치"
+    AGARI = "아가리"
+    TSUMO = "츠모"
+    RON = "론"
+    RYUKYOKU = "류큐큐"
+    NUKIDORA = "누키도로라"
+    OPTIONS_TITLE = "옵션:"    
     
     MJAI_2_STR ={
-        '1m': '一萬', '2m': '二萬', '3m': '三萬', '4m': '四萬', '5m': '伍萬',
-        '6m': '六萬', '7m': '七萬', '8m': '八萬', '9m': '九萬',
-        '1p': '一筒', '2p': '二筒', '3p': '三筒', '4p': '四筒', '5p': '伍筒',
-        '6p': '六筒', '7p': '七筒', '8p': '八筒', '9p': '九筒',
-        '1s': '一索', '2s': '二索', '3s': '三索', '4s': '四索', '5s': '伍索',
-        '6s': '六索', '7s': '七索', '8s': '八索', '9s': '九索',
-        'E': '東', 'S': '南', 'W': '西', 'N': '北',
-        'C': '中', 'F': '發', 'P': '白',
-        '5mr': '赤伍萬', '5pr': '赤伍筒', '5sr': '赤伍索', 
-        'reach': '立直', 'chi_low': '吃-低', 'chi_mid': '吃-中', 'chi_high': '吃-高', 'pon': '碰', 'kan_select':'杠',
-        'hora': '和牌', 'ryukyoku': '流局', 'none': '跳过', 'nukidora':'拔北'
+        '1m': '일만', '2m': '이만', '3m': '삼만', '4m': '사만', '5m': '오만',
+        '6m': '육만', '7m': '칠만', '8m': '팔만', '9m': '구만',
+        '1p': '일통', '2p': '이통', '3p': '삼통', '4p': '사통', '5p': '오통',
+        '6p': '육통', '7p': '칠통', '8p': '팔통', '9p': '구통',
+        '1s': '일삭', '2s': '이삭', '3s': '삼삭', '4s': '사삭', '5s': '오삭',
+        '6s': '육삭', '7s': '칠삭', '8s': '팔삭', '9s': '구삭',
+        'E': '동', 'S': '남', 'W': '서', 'N': '북',
+        'C': '중', 'F': '발', 'P': '백',
+        '5mr': '적오만', '5pr': '적오통', '5sr': '적오삭', 
+        'reach': '리치', 'chi_low': '치-하', 'chi_mid': '치-중', 'chi_high': '치-상', 'pon': '폰', 'kan_select':'칸',
+        'hora': '아가리', 'ryukyoku': '류큐큐', 'none': '건너뛰기', 'nukidora':'누키도로라'
     }
 
 
